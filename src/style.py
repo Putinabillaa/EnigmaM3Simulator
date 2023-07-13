@@ -1,4 +1,4 @@
-
+''' This file contains all the style for the GUI '''
 main_window = """QMainWindow{
     background-color: #24272C;
     font-family: 'Courier New'; 
@@ -90,12 +90,12 @@ textfield = """QTextEdit{
 }"""
 
 button = """QPushButton{
-    background-color: #1E2023;
+    background-color: #393A44;
     border-radius: 8px;
     font-family: "Courier New";
 }
 QPushButton:hover{
-    background-color: #393A44;
+    background-color: #1E2023;
 }"""
 
 step_by_step_widget = """QWidget{
@@ -108,6 +108,8 @@ settings_widget = """QWidget{
     padding: 5px;
 }
 """
+
+# class for animation style
 
 combobox = """QComboBox{
     background-color: #1E2023;

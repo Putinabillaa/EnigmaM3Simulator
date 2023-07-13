@@ -39,7 +39,6 @@ class Enigma:
     def enchiper(self, c_in):
         '''Enchiper one character'''
         self.step_by_step = ""
-        print(self.plugboard_settings)
         if not c_in.isalpha():
             self.step_by_step += "Input: {}\n".format(c_in)
             output = c_in
