@@ -33,17 +33,17 @@ class Rotor:
         return key_out
     
     def is_in_turnover_pos(self):
-        return chr((ord(self.state) + 1 - ord("A")) % 26 + ord("A")) == self.notch
+        return chr((ord(self.state) + 8 - ord("A")) % 26 + ord("A")) == self.notch
     
-    def notching(self, offset=1):
+    def step(self, offset=1):
         self.state = chr((ord(self.state) + offset - ord("A")) % 26 + ord("A"))
     
 ROTOR_I_WIRING_TEXT = "EKMFLGDQVZNTOWYHXUSPAIBRCJ"
 ROTOR_I_WIRING = [char for char in ROTOR_I_WIRING_TEXT]
-ROTOR_I_NOTCH ="Q"
+ROTOR_I_NOTCH ="Y"
 ROTOR_II_WIRING_TEXT = "AJDKSIRUXBLHWTMCQGZNPYFVOE"
 ROTOR_II_WIRING = [char for char in ROTOR_II_WIRING_TEXT]
-ROTOR_II_NOTCH = "E"
+ROTOR_II_NOTCH = "M"
 ROTOR_III_WIRING_TEXT = "BDFHJLCPRTXVZNYEIWGAKMUSQO"
 ROTOR_III_WIRING = [char for char in ROTOR_III_WIRING_TEXT]
-ROTOR_III_NOTCH = "V"
+ROTOR_III_NOTCH = "D"

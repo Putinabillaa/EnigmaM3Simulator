@@ -48,12 +48,14 @@ class Enigma:
             self.step_by_step += "Input: {}\n".format(c_upper)
             c = c_upper.translate(self.translation_table)
             self.step_by_step += "Plugboard: {}\n".format(c)
-            if self.rotor2.is_in_turnover_pos():
-                self.rotor2.notching()
-                self.rotor3.notching()
+            if self.rotor2.is_in_turnover_pos() and not self.rotor1.is_in_turnover_pos():
+                self.rotor2.step()
+                self.rotor3.step()
+            if self.rotor2.is_in_turnover_pos() and self.rotor1.is_in_turnover_pos():
+                self.rotor3.step()
             if self.rotor1.is_in_turnover_pos():
-                self.rotor2.notching()
-            self.rotor1.notching()
+                self.rotor2.step()
+            self.rotor1.step()
             t = self.rotor1.encipher_right(c)
             self.step_by_step += "Rotor 1: {}\n".format(t)
             t = self.rotor2.encipher_right(t)
