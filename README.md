@@ -9,7 +9,7 @@
 ## Description
 This is a simple Python app that simulates Enigma M3 encryption. The rotors can be chosen from type I, II, and III. The reflector used is type B (UKW-B). The wiring and notch used in each rotor type are referenced from [here](https://www.cryptomuseum.com/crypto/enigma/wiring.htm#12)
 
-![Desktop - 5 (1)](https://github.com/Putinabillaa/EnigmaM3Simulator/assets/109022993/fed774a8-1f1b-4cc9-a075-38969981317f)
+![Desktop - 5 (1)](https://github.com/Putinabillaa/EnigmaM3Simulator/assets/109022993/69070540-34a6-43f3-8eca-dd83b527c5ea)
 
 
 ## Program Requirements and Installation
